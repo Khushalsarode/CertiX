@@ -1,0 +1,15 @@
+hashlib
+secrets
+tokenize 
+pillow
+flask 
+flask_pymongo 
+jinja2
+weasyprint 
+qrcode
+base64
+io
+pdf2image 
+requests
+json
+Werkzeug
