@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Certificate</title>
+<style>
+    /* Style the container */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form header */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style form elements */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the submit button */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Add more styles as needed */
+
+</style>
+</head>
+<body>
+    <div class="container mt-5">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          <div id="flash-messages" class="alert alert-success" style="text-align: center; color: rgb(20, 68, 15);">
+            <ul>
+              {% for message in messages %}
+                <li>{{ message }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+      {% endwith %}
+        <h1>Download Certificate</h1>
+
+
+        <form method="POST" action="/student/sdownload">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="unique_id">Unique ID:</label>
+                <input type="text" id="unique_id" name="unique_id" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Download Certificate</button>
+        </form>
+    </div>
+    <script>
+        // Function to hide the flash message
+        function hideFlashMessage() {
+          var flashMessages = document.getElementById("flash-messages");
+          if (flashMessages) {
+            flashMessages.style.display = "none";
+          }
+        }
+      
+        // Automatically hide the flash message after 5 seconds (5000 milliseconds)
+        setTimeout(hideFlashMessage, 5000);
+      </script>
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Page - certiX</title>
+    <!-- Add Bootstrap CSS Link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add Custom CSS -->
+    <link rel="stylesheet" href="/static/css/student.css"> <!-- Replace with the actual path to your custom CSS file -->
+    <!-- Add Logo to Browser Tab -->
+    <link rel="icon" href="logo.png" type="image/png">
+    <style>
+        /* student.css - You can define your student-specific styles here */
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html"> <!-- Adjust the URL for the Home link -->
+                <img src="logo.png" alt="certiX Logo" width="30" height="30" class="d-inline-block align-top mr-2"> certiX
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a> <!-- Adjust the URL for the Home link -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/student/sverify">Verify</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/student/sdownload">Download</a>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Student Page Content -->
+    <div class="container mt-5">
+        <h1>Welcome to the Student Page</h1>
+        <!-- Add content specific to the student page here -->
+        <!-- You can include tabs or buttons for various student functionalities -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">verify Certificates</h5>
+                        <p class="card-text">Click here to Verify certificates.</p>
+                        <a href="/student/sverify" class="btn btn-primary">Go</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Download Certificates</h5>
+                        <p class="card-text">Click here to Download certificates.</p>
+                        <a href="/student/sdownload" class="btn btn-primary">Go</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS and jQuery Links -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
