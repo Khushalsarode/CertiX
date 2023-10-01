@@ -22,7 +22,9 @@ CertiX is a cutting-edge certificate management system designed to modernize and
 
 ## Demo
 
-[Watch Demo]([https://example.com/demo](https://youtu.be/yYFtd1lqpOc?si=kovBxvWpJsRQcJ6v))
+Watch a demo of CertiX in action:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yYFtd1lqpOc" frameborder="0" allowfullscreen></iframe>
 
 ## Getting Started
 
