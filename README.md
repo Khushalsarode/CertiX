@@ -1,4 +1,4 @@
-![CertiX Logo](logo.png)
+![CertiX Logo](logo7.png)
 
 # CertiX - Empowering Trust Through Technology
 
